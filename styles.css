@@ -1,0 +1,274 @@
+
+header h2 {
+    position: absolute; /* Posiciona el título sobre la imagen */
+    top: 35%; /* Alinea verticalmente en el medio */
+    left: 50%; /* Alinea horizontalmente en el medio */
+    transform: translate(-50%, -50%); /* Centra el título */
+    font-size: 4em; /* Ajusta el tamaño de la fuente */
+    color: rgb(255, 255, 255); /* Hace que el texto sea blanco */
+    font-weight: bold;
+    z-index: 10; /* Asegura que el título esté sobre la imagen */
+    margin: 0;
+}
+
+/*letra de banner superior*/
+.carousel-item .carousel-caption h5,
+.carousel-item .carousel-caption p {
+    color: #000000; /* Color negro */
+}
+
+
+
+
+/* Archivo de estilos CSS */
+body {
+    background-color: rgb(171, 217, 247); /* Establece el color de fondo de la página */
+}
+
+/* hora */
+#hora {
+    text-align: center;
+    font-size: 1.2em;
+    color: #bdb0ed;
+    margin-top: 10px;
+}
+
+#fecha-hora {
+    font-weight: bold;
+    color: #000000;
+}
+/* hora */
+
+/* footer */
+footer {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    margin-top: 40px;
+}
+/* footer */
+
+/* tamaño imagen */
+img {
+    width: 1520px;  /* Establece el ancho a 300px */
+    height: 300px;  /* Establece la altura a 200px */
+}
+/* tamaño imagen */
+
+/* el faro */
+header {
+    text-align: center; /* Centra el texto */
+    position: relative; /* Permite usar 'position' en el título */
+}
+
+header h1 {
+    font-size: 3em; /* Tamaño grande para el título */
+    color: white;   /* Asegura que el texto sea blanco */
+    font-weight: bold;
+    position: absolute; /* Posiciona el título sobre la imagen */
+    top: 10%; /* Coloca el título un poco más abajo de la parte superior */
+    left: 50%; /* Coloca el título en la mitad horizontal */
+    transform: translateX(-50%); /* Ajusta para centrarlo horizontalmente */
+    margin: 0;  /* Elimina márgenes */
+}
+/* el faro */
+
+
+/* Estilo de las secciones de noticias */
+#noticias, #deporte, #negocios {
+    margin-top: 30px; /* Espacio superior para separar las secciones */
+}
+
+/* Contenedor de las tarjetas de noticias */
+.contenedor-articulos {
+    display: flex;                /* Alinea las tarjetas horizontalmente */
+    gap: 20px;                    /* Espacio entre las tarjetas */
+    justify-content: center;  /* Alinea las tarjetas al principio del contenedor */
+    flex-wrap: nowrap;            /* No permite que las tarjetas se acomoden en nuevas filas */
+}
+
+/* Tarjetas de noticias */
+.tarjeta-articulo {
+    background-color: #dbecf4;  /* Color de fondo blanco */
+    padding: 20px;              /* Espaciado interno de las tarjetas */
+    width: 30%;                 /* Cada tarjeta ocupa el 30% del ancho del contenedor */
+    box-sizing: border-box;     /* Asegura que el padding no sobrepase el ancho de las tarjetas */
+    border-radius: 8px;         /* Bordes redondeados */
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);  /* Sombra suave para darle profundidad */
+    transition: transform 0.3s;
+}
+
+/* Efecto de hover en las tarjetas */
+.tarjeta-articulo:hover {
+    transform: scale(1.05); /* Hace que la tarjeta crezca al pasar el mouse */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2); /* Aumenta la sombra al pasar el mouse */
+}
+
+/* Estilo del título de la noticia */
+.tarjeta-articulo h3 {
+    font-size: 1.6em;  /* Tamaño de fuente más pequeño para el título */
+    font-weight: bold; /* Negrita para destacar el título */
+    text-align: center; /* Centra el texto del título */
+    margin-top: 10px; /* Espacio superior para separar el título del borde */
+    color: #333; /* Color oscuro para el título */
+}
+
+/* Estilo de la categoría */
+.tarjeta-articulo p {
+    font-size: 0.9em;  /* Tamaño de fuente pequeño para la categoría */
+    color: #666;      /* Color gris para la categoría */
+    margin: 10px 0;   /* Espacio arriba y abajo de la categoría */
+}
+
+/* Estilo de la descripción de la noticia */
+.tarjeta-articulo p:last-child {
+    font-size: 1em;    /* Tamaño de fuente de la descripción */
+    color: #444;       /* Color un poco más oscuro para la descripción */
+    margin-bottom: 10px; /* Espacio inferior para separar del borde de la tarjeta */
+}
+
+/* Asegura que los enlaces no tengan subrayado */
+a {
+    text-decoration: none; /* Elimina el subrayado */
+    color: inherit; /* Mantiene el color del texto de la tarjeta */
+}
+
+
+
+
+/* css para formularios */
+/* Estilo para los formularios */
+
+form {
+    background-color: #d1dcff;  /* Fondo blanco para los formularios */
+    padding: 20px;              /* Espaciado interno para los formularios */
+    margin-top: 30px;           /* Margen superior para separar de otras secciones */
+    border-radius: 8px;         /* Bordes redondeados */
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    width: 100%;                /* Asegura que el formulario ocupe todo el ancho disponible */
+    max-width: 600px;           /* Limita el tamaño del formulario */
+    margin-left: auto;          /* Centra el formulario horizontalmente */
+    margin-right: auto;         /* Centra el formulario horizontalmente */
+}
+
+h2 {
+    text-align: center;         /* Centra el texto */
+    font-size: 2em;             /* Tamaño de fuente para los títulos */
+    margin-bottom: 20px;        /* Espacio debajo del título */
+    font-weight: bold;          /* Hace los títulos más destacados */
+}
+
+/* Estilo para las etiquetas dentro de los formularios */
+form label {
+    display: block;
+    margin-top: 10px;
+    font-weight: bold;
+    font-size: 1.1em; /* Aumenta el tamaño de la fuente */
+}
+
+/* Estilo para los inputs y textarea dentro de los formularios */
+form input, form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1em;
+    box-sizing: border-box;  /* Asegura que el padding no sobrepase el tamaño */
+}
+
+/* Estilo para los botones */
+form button {
+    padding: 12px 20px;
+    background-color: #4CAF50;  /* Color verde */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.2em;
+    margin-top: 15px;
+}
+
+/* Efecto de hover para el botón */
+form button:hover {
+    background-color: #45a049;  /* Cambia el color del botón cuando se pasa el mouse */
+}
+
+/* Estilo para mostrar el mensaje de confirmación */
+#mensaje-confirmacion {
+    font-size: 1.2em;
+    color: green;
+    margin-top: 20px;
+    text-align: center;
+}
+
+
+/* Estilo para mostrar las noticias agregadas */
+#noticias-agregadas {
+    font-size: 1.1em;
+    margin-top: 20px;
+    text-align: center; /* Centra el texto dentro del contenedor */
+    display: flex; /* Hacemos que el contenedor sea flex */
+    flex-direction: column; /* Alineamos los artículos de arriba hacia abajo */
+    justify-content: center; /* Centra los elementos dentro del contenedor */
+    align-items: center; /* Asegura que el contenedor en su conjunto esté centrado */
+    max-width: 80%; /* Asegura que el contenedor no se expanda más allá del 80% */
+    margin-left: auto; /* Centra el contenedor horizontalmente */
+    margin-right: auto; /* Centra el contenedor horizontalmente */
+}
+
+/* Estilo para el contador de noticias */
+#contador-noticias {
+    font-size: 1.1em;
+    text-align: center; /* Centra el texto */
+    margin-top: 10px;
+}
+/* css para formularios */
+
+
+/* Contenedor principal para el video y el audio */
+.media-container {
+    text-align: center;
+    margin-top: 30px;
+}
+
+/* Contenedor para el video y el audio */
+.media-content {
+    display: flex;
+    justify-content: center; /* Centra los elementos */
+    align-items: center; /* Alinea el contenido verticalmente */
+    gap: 30px; /* Espacio entre el video y el audio */
+}
+
+/* Estilo para el video */
+.video-container iframe {
+    width: 560px;
+    height: 320px;
+    max-width: 80%; /* Asegura que se ajuste en pantallas pequeñas */
+    height: auto;
+}
+
+/* Estilo para el audio */
+.audio-container audio {
+    width: 300px;
+    max-width: 100%; /* Ajusta el tamaño del audio en pantallas más pequeñas */
+    margin-top: 10px; /* Añade un poco de espacio superior */
+}
+
+/* Estilo para el título */
+h3 {
+    font-size: 1.8em;
+    margin-bottom: 20px;
+}
+/* Contenedor principal para el video y el audio */
+
+/*pagina se ajusta a las pantallas*/
+@media (max-width: 768px) {
+    header h2 {
+        font-size: 2em;  /* Reducción de tamaño de fuente en pantallas pequeñas */
+    }
+    .carousel-item img {
+        width: 100%;  /* Asegura que las imágenes de los artículos se adapten al tamaño de la pantalla */
+    }
+}
