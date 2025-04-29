@@ -114,6 +114,10 @@ header h1 {
     color: #333; /* Color oscuro para el título */
 }
 
+h3 {
+    color: #720000;  /* Cambia el color a lo que desees */
+}
+
 /* Estilo de la categoría */
 .tarjeta-articulo p {
     font-size: 0.9em;  /* Tamaño de fuente pequeño para la categoría */
@@ -272,3 +276,30 @@ h3 {
         width: 100%;  /* Asegura que las imágenes de los artículos se adapten al tamaño de la pantalla */
     }
 }
+
+
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Estilos para pantallas grandes */
+  @media (min-width: 768px) {
+    body {
+      font-size: 16px;
+    }
+  }
+  
+  /* Estilos para pantallas pequeñas */
+  @media (max-width: 767px) {
+    body {
+      font-size: 14px;
+    }
+  
+    .contenedor {
+      padding: 10px;
+    }
+  }
+  
