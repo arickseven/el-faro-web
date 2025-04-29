@@ -204,42 +204,50 @@
         </div>
 
         <!-- Formularios -->
+<!-- Contenedor para los dos formularios -->
+<div class="formularios-contenedor">
+    <!-- Formulario de Contacto -->
+    <form id="formulario-contacto">
         <h2>Contacto</h2>
-        <form id="formulario-contacto">
-            <label for="nombre">Nombre:</label>
-            <input type="text" id="nombre" name="nombre" required>
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" name="nombre" required>
 
-            <label for="correo">Correo:</label>
-            <input type="email" id="correo" name="correo" required>
+        <label for="correo">Correo:</label>
+        <input type="email" id="correo" name="correo" required>
 
-            <label for="mensaje">Mensaje:</label>
-            <textarea id="mensaje" name="mensaje" rows="4" required></textarea>
+        <label for="mensaje">Mensaje:</label>
+        <textarea id="mensaje" name="mensaje" rows="4" required></textarea>
 
-            <button type="submit">Enviar</button>
-        </form>
+        <button type="submit">Enviar</button>
 
-        <div id="mensaje-confirmacion" style="display: none; color: green; margin-top: 20px;">
+        <div id="mensaje-confirmacion">
             Gracias por contactarnos con nosotros.
         </div>
+    </form>
 
+    
+
+    <!-- Formulario para Agregar Noticias -->
+    <form id="formulario-agregar-noticia">
         <h2>Agregar Noticias</h2>
-        <form id="formulario-agregar-noticia">
-            <label for="titulo">Título de la noticia:</label>
-            <input type="text" id="titulo" name="titulo" required>
+        <label for="titulo">Título de la noticia:</label>
+        <input type="text" id="titulo" name="titulo" required>
 
-            <label for="descripcion">Descripción:</label>
-            <textarea id="descripcion" name="descripcion" rows="4" required></textarea>
+        <label for="descripcion">Descripción:</label>
+        <textarea id="descripcion" name="descripcion" rows="4" required></textarea>
 
-            <button type="submit">Agregar</button>
-        </form>
+        <button type="submit">Agregar</button>
+    </form>
+</div>
 
-        <div id="contador-noticias" style="margin-top: 20px;">
-            Total de noticias: <span id="total-noticias">0</span>
-        </div>
+<div id="contador-noticias" style="margin-top: 20px;">
+    Total de noticias: <span id="total-noticias">0</span>
+</div>
 
-        <div id="noticias-agregadas" style="margin-top: 20px;">
-            <!-- Aquí se mostrarán las noticias agregadas -->
-        </div>
+<div id="noticias-agregadas" style="margin-top: 20px;">
+    <!-- Aquí se mostrarán las noticias agregadas -->
+</div>
+
     </main>
 
     <!-- Footer mas grande-->

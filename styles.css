@@ -51,7 +51,7 @@ footer {
 
 /* tamaño imagen */
 img {
-    width: 1520px;  /* Establece el ancho a 300px */
+    width: 1311px;  /* Establece el ancho a 300px */
     height: 300px;  /* Establece la altura a 200px */
 }
 /* tamaño imagen */
@@ -144,17 +144,29 @@ a {
 /* css para formularios */
 /* Estilo para los formularios */
 
+/* Estilo para los formularios */
+.formularios-contenedor {
+    display: flex; /* Usamos flexbox para poner los formularios en una fila */
+    gap: 30px; /* Espacio entre los formularios */
+    justify-content: center; /* Centra los formularios horizontalmente */
+    margin-top: 50px; /* Espacio superior */
+    flex-wrap: nowrap; /* Evita que los formularios se acomoden en nuevas filas */
+    width: 100%; /* Asegura que ocupe el 100% del ancho disponible */
+    max-width: 2000px; /* Limita el tamaño máximo del contenedor */
+
+}
+
+/* Ajustar tamaño de los formularios para que se acomoden */
 form {
     background-color: #d1dcff;  /* Fondo blanco para los formularios */
     padding: 20px;              /* Espaciado interno para los formularios */
-    margin-top: 30px;           /* Margen superior para separar de otras secciones */
     border-radius: 8px;         /* Bordes redondeados */
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); /* Sombra suave */
     width: 100%;                /* Asegura que el formulario ocupe todo el ancho disponible */
-    max-width: 600px;           /* Limita el tamaño del formulario */
-    margin-left: auto;          /* Centra el formulario horizontalmente */
-    margin-right: auto;         /* Centra el formulario horizontalmente */
+    max-width: 45%;             /* Limita el tamaño máximo de cada formulario para que quepan lado a lado */
+    box-sizing: border-box;     /* Asegura que el padding no afecte el tamaño total */
 }
+
 
 h2 {
     text-align: center;         /* Centra el texto */
@@ -201,10 +213,11 @@ form button:hover {
 
 /* Estilo para mostrar el mensaje de confirmación */
 #mensaje-confirmacion {
-    font-size: 1.2em;
+    font-size: 1.5em;
     color: green;
-    margin-top: 20px;
-    text-align: center;
+    margin-top: 20px; /* Espacio adicional para separar el mensaje del formulario */
+    text-align: center; /* Alinea el mensaje a la izquierda */
+    display: none; /* Asegúrate de que el mensaje esté oculto inicialmente */
 }
 
 
@@ -242,7 +255,7 @@ form button:hover {
     display: flex;
     justify-content: center; /* Centra los elementos */
     align-items: center; /* Alinea el contenido verticalmente */
-    gap: 30px; /* Espacio entre el video y el audio */
+    gap: 315px; /* Espacio entre el video y el audio */
 }
 
 /* Estilo para el video */
