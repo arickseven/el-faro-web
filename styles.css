@@ -51,7 +51,7 @@ footer {
 
 /* tamaño imagen */
 img {
-    width: 1311px;  /* Establece el ancho a 300px */
+    width: 1550px;  /* Establece el ancho a 300px */
     height: 300px;  /* Establece la altura a 200px */
 }
 /* tamaño imagen */
@@ -140,34 +140,6 @@ a {
 
 
 
-
-/* css para formularios */
-/* Estilo para los formularios */
-
-/* Estilo para los formularios */
-.formularios-contenedor {
-    display: flex; /* Usamos flexbox para poner los formularios en una fila */
-    gap: 30px; /* Espacio entre los formularios */
-    justify-content: center; /* Centra los formularios horizontalmente */
-    margin-top: 50px; /* Espacio superior */
-    flex-wrap: nowrap; /* Evita que los formularios se acomoden en nuevas filas */
-    width: 100%; /* Asegura que ocupe el 100% del ancho disponible */
-    max-width: 2000px; /* Limita el tamaño máximo del contenedor */
-
-}
-
-/* Ajustar tamaño de los formularios para que se acomoden */
-form {
-    background-color: #d1dcff;  /* Fondo blanco para los formularios */
-    padding: 20px;              /* Espaciado interno para los formularios */
-    border-radius: 8px;         /* Bordes redondeados */
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); /* Sombra suave */
-    width: 100%;                /* Asegura que el formulario ocupe todo el ancho disponible */
-    max-width: 45%;             /* Limita el tamaño máximo de cada formulario para que quepan lado a lado */
-    box-sizing: border-box;     /* Asegura que el padding no afecte el tamaño total */
-}
-
-
 h2 {
     text-align: center;         /* Centra el texto */
     font-size: 2em;             /* Tamaño de fuente para los títulos */
@@ -244,7 +216,7 @@ form button:hover {
 /* css para formularios */
 
 
-/* Contenedor principal para el video y el audio */
+/* video y el audio */
 .media-container {
     text-align: center;
     margin-top: 30px;
@@ -278,7 +250,82 @@ h3 {
     font-size: 1.8em;
     margin-bottom: 20px;
 }
-/* Contenedor principal para el video y el audio */
+/*  video y el audio */
+
+
+
+
+
+
+
+/* Estilo para el contenedor principal que agrupa los formularios */
+#formularios-contenedor {
+    display: flex;                 /* Usa Flexbox para organizar los formularios */
+    justify-content: center;       /* Centra los formularios horizontalmente */
+    align-items: center;           /* Centra los formularios verticalmente */
+    gap: 30px;                     /* Espacio entre los formularios */
+    flex-wrap: wrap;                /* Permite que los formularios se acomoden en nuevas filas si es necesario */
+    margin-top: 50px;               /* Espacio superior */
+}
+
+/* Estilo para cada formulario */
+.formulario {
+    background-color: #d1dcff;     /* Fondo claro para los formularios */
+    padding: 20px;                 /* Espaciado interno */
+    border-radius: 8px;            /* Bordes redondeados */
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    width: 100%;                   /* Asegura que el formulario ocupe el ancho disponible */
+    max-width: 400px;              /* Limita el tamaño máximo de cada formulario */
+    box-sizing: border-box;        /* Asegura que el padding no afecte el tamaño */
+}
+
+/* Estilo para los títulos dentro de los formularios */
+.formulario h3 {
+    text-align: center;            /* Centra el título */
+    font-size: 2em;                /* Tamaño de fuente para los títulos */
+    margin-bottom: 20px;           /* Espacio debajo del título */
+    font-weight: bold;             /* Hace los títulos más destacados */
+}
+
+/* Estilo para las etiquetas dentro de los formularios */
+form label {
+    display: block;
+    margin-top: 10px;
+    font-weight: bold;
+    font-size: 1.1em;              /* Aumenta el tamaño de la fuente */
+}
+
+/* Estilo para los inputs y textarea dentro de los formularios */
+form input, form textarea, form select {
+    width: 100%;                  /* Hace que los campos de entrada ocupen todo el ancho disponible */
+    padding: 10px;                /* Añade espaciado dentro de los campos */
+    margin-top: 5px;              /* Añade espacio entre los campos */
+    border: 1px solid #ccc;       /* Borde suave para los campos */
+    border-radius: 5px;           /* Bordes redondeados para los campos */
+    font-size: 1em;               /* Tamaño de fuente adecuado */
+    box-sizing: border-box;       /* Asegura que el padding no afecte el tamaño */
+}
+
+/* Estilo para el botón de los formularios */
+form button {
+    padding: 12px 20px;           /* Tamaño del botón */
+    background-color: #4CAF50;    /* Color verde */
+    color: white;                 /* Texto blanco */
+    border: none;                 /* Sin borde */
+    border-radius: 5px;           /* Bordes redondeados */
+    cursor: pointer;              /* Cambia el cursor a mano */
+    font-size: 1.2em;             /* Tamaño adecuado para el texto */
+    margin-top: 15px;             /* Espacio superior */
+}
+
+/* Efecto de hover para el botón */
+form button:hover {
+    background-color: #45a049;    /* Cambia el color al pasar el mouse */
+}
+
+
+
+
 
 /*pagina se ajusta a las pantallas*/
 @media (max-width: 768px) {

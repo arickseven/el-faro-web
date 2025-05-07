@@ -1,3 +1,12 @@
+<!-- formulario.php -->
+<?php
+// Inicia la sesión si es necesario
+// session_start();
+?>
+
+
+
+
 <!DOCTYPE html>
 <html lang="es">
 
@@ -203,50 +212,73 @@
             </div>
         </div>
 
-        <!-- Formularios -->
-<!-- Contenedor para los dos formularios -->
-<div class="formularios-contenedor">
-    <!-- Formulario de Contacto -->
-    <form id="formulario-contacto">
-        <h2>Contacto</h2>
-        <label for="nombre">Nombre:</label>
-        <input type="text" id="nombre" name="nombre" required>
+<!-- Contenedor principal que envuelve los 3 formularios -->
+<div id="formularios-contenedor">
+    <!-- Primer formulario (por ejemplo, de contacto) -->
+    <div class="formulario">
+        <h3>Contacto</h3>
+        <form action="action.php" method="POST">
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" required>
 
-        <label for="correo">Correo:</label>
-        <input type="email" id="correo" name="correo" required>
+            <label for="correo">Correo:</label>
+            <input type="email" id="correo" name="correo" required>
 
-        <label for="mensaje">Mensaje:</label>
-        <textarea id="mensaje" name="mensaje" rows="4" required></textarea>
+            <label for="mensaje">Mensaje:</label>
+            <textarea id="mensaje" name="mensaje" required></textarea>
 
-        <button type="submit">Enviar</button>
+            <button type="submit">Enviar</button>
+        </form>
+    </div>
 
-        <div id="mensaje-confirmacion">
-            Gracias por contactarnos con nosotros.
-        </div>
-    </form>
+    <!-- Segundo formulario (por ejemplo, para agregar noticias) -->
+    <div class="formulario">
+        <h3>Agregar Noticias</h3>
+        <form action="action.php" method="POST">
+            <label for="titulo">Título de la noticia:</label>
+            <input type="text" id="titulo" name="titulo" required>
 
-    
+            <label for="descripcion">Descripción:</label>
+            <textarea id="descripcion" name="descripcion" required></textarea>
 
-    <!-- Formulario para Agregar Noticias -->
-    <form id="formulario-agregar-noticia">
-        <h2>Agregar Noticias</h2>
-        <label for="titulo">Título de la noticia:</label>
-        <input type="text" id="titulo" name="titulo" required>
+            <button type="submit">Agregar</button>
+        </form>
+    </div>
 
-        <label for="descripcion">Descripción:</label>
-        <textarea id="descripcion" name="descripcion" rows="4" required></textarea>
+    <!-- Tercer formulario (por ejemplo, de suscripción) -->
+    <div class="formulario">
+        <h3>Suscripción</h3>
+        <form action="action.php" method="POST">
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" required>
 
-        <button type="submit">Agregar</button>
-    </form>
+            <label for="correo">Correo:</label>
+            <input type="email" id="correo" name="correo" required>
+
+            <label for="genero">Género:</label>
+            <select id="genero" name="genero" required>
+                <option value="masculino">Masculino</option>
+                <option value="femenino">Femenino</option>
+                <option value="otro">Otro</option>
+            </select>
+
+            <label for="tipo">Tipo de Suscripción:</label>
+            <select id="tipo" name="tipo" required>
+                <option value="gratis">Gratis</option>
+                <option value="premium">Premium</option>
+                <option value="vip">VIP</option>
+            </select>
+
+            <label for="edad">Edad:</label>
+            <input type="number" id="edad" name="edad" required>
+
+            <button type="submit">Suscribirse</button>
+        </form>
+    </div>
 </div>
 
-<div id="contador-noticias" style="margin-top: 20px;">
-    Total de noticias: <span id="total-noticias">0</span>
-</div>
 
-<div id="noticias-agregadas" style="margin-top: 20px;">
-    <!-- Aquí se mostrarán las noticias agregadas -->
-</div>
+
 
     </main>
 
